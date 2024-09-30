@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigate {
+    display: flex;
+    width: 67%;
+}
+
+.navigate__item {
+    display: flex;
+}
+
+.header, .footer {
+    width: 100%;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position: center;
+}
+
+.header {
+    height: 500px;
+    background-image: url(../images/Desert-home.jpg);
+}
+
+.header__content-area {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navigate {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    z-index: 3;
+    width: 100%;
+}
+
+.header__main-filling {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67%;
+    height: 159px;
+}
+
+.header__main-filling_top {
+    display: flex;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    line-height: 51px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.header__main-filling_bot {
+    display: flex;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #ffffff;
+    opacity: 0.63;   
+}
+
+.header__latest-posts-btn {
+    display: flex;
+    width: 167px;
+    height: 44px;
+    border-radius: 3px;
+    background: #dd783f;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__latest-posts-btn_text {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+.item_header, .item_footer {
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+.categories-menu {
+    background-color: #ffffff;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories-menu__navigate {
+    display: flex;
+    width: 67%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categories-menu__navigate_item {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #768088;
+}
+
+.main-content {
+    background: #f7f7f7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-posts {
+    display: flex;
+    width: 67%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature-posts__item_img {
+    position: relative;
+    width: 460px;
+    height: 280px;
+    border-radius: 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article-info {
+    width: 420px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.article-info__main-txt {
+    font-family: 'Lora', serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;  
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.article-info__bot-txt {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    opacity: 0.7;
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.author-info {
+   display: flex;
+   align-items: center;
+}
+
+.author-info__txt, .article-info__date {
+    display: flex;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.author-info__img {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    display: flex;
+}
+
+.feature-posts__item_main-txt {
+    font-family: 'Lora', serif;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    display: flex;
+}
+
+.feature-posts__item_bot-txt {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    opacity: 0.7;
+    display: flex;
+}
+
+.feature-posts__tag__adventure {
+    width: 87px;
+    height: 26px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+.feature-posts__tag__none {
+    opacity: 0;
+}
+
+.feature-posts__tag_txt {
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    display: flex;
+}
+
+.main-category__header {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+.main-category__header_txt {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+}
+
+.posts_header_underline {
+    display: flex;
+    width: 188px;
+    height: 1px;
+    background-color: #dedede;
+}
+
+.most-recent-posts {
+    position: relative;
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.most-recent__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 291px;
+    margin: 25px 25px 0 0;
+    background-color: #ffffff;
+}
+
+.most-recent__item_content-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    height: 100%;
+    border-top: 1px solid #e5e5e5;
+}
+
+.most-recent__item_img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    object-fit: cover;
+}
+
+.most-recent__main-txt {
+    padding-left: 13px;
+    display: flex;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding-bottom: 6px;
+}
+
+.most-recent__bot-txt {
+    text-decoration: none;
+    padding-left: 13px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    display: flex;
+    color: #7a7a7a;
+}
+
+.most-recent__author-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.most-recent__item_author-info {
+    padding-left: 13px;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    background-color: #fcfcfc;
+    margin-top: auto;
+    border-top: 1px solid #efefef;
+}
+
+.most-recent__author-info_txt {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: #999999;
+}
+
+.most-recent__author-info_date {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: #999999;
+    display: flex;
+    margin-left: auto;
+    margin-right: 13px;
+}
+
+.post_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer {
+    height: 90px;
+    background-image: url(../images/img-footer.jpg);
+}
+
+.footer__navigate {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigate__list {
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigate__list-item {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item_footer {
+    opacity: 0.6;
+}
